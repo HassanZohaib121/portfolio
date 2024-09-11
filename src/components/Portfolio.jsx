@@ -30,7 +30,7 @@ export default function Portfolio() {
         className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold flex flow-row">
+          <Link href="/portfolio" className="text-2xl font-bold flex flow-row">
             <img src="/h.png" alt="logo" className="w-8 -mr-2" />
             assan Zohaib
           </Link>
@@ -145,7 +145,7 @@ export default function Portfolio() {
             </p>
             <button
               onClick={() => {
-                navigate('/cv')
+                navigate('/portfolio/cv')
               }}
               className="bg-white text-blue-600 font-bold py-2 px-4 rounded-full hover:bg-blue-100 transition duration-300 transform hover:scale-105"
             >
@@ -233,7 +233,7 @@ export default function Portfolio() {
                   </p>
                   <button
                     onClick={() => {
-                      navigate(`/project/${slug}`)
+                      navigate(`/portfolio/project/${slug}`)
                     }}
                     className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
                   >

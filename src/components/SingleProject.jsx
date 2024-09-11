@@ -17,7 +17,7 @@ export default function SingleProject() {
       <header className="bg-white dark:bg-gray-800 shadow">
         <div className="container mx-auto px-4 py-6">
           <a
-            href="/"
+            href="/portfolio"
             className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
