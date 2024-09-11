@@ -41,18 +41,11 @@ export default function CV() {
                 download
                 className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
               >
-                Print CV
+                Download CV
               </Button>
             )}
             content={() => componentRef.current}
           />
-          <a
-            href={'/portfolio/cv/hassan.pdf'}
-            download
-            className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
-          >
-            Download CV
-          </a>
         </div>
       </header>
 
