@@ -29,7 +29,7 @@ export default function CV() {
       <header className="bg-white dark:bg-gray-800 shadow mb-2">
         <div className="container mx-auto px-4 py-4 flex flex-row justify-between">
           <a
-            href="/"
+            href="/portfolio"
             className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />

@@ -31,7 +31,7 @@ export default function Portfolio() {
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/portfolio" className="text-2xl font-bold flex flow-row">
-            <img src="/h.png" alt="logo" className="w-8 -mr-2" />
+            <img src="/portfolio/h.png" alt="logo" className="w-8 -mr-2" />
             assan Zohaib
           </Link>
           <nav className="hidden md:flex space-x-8">

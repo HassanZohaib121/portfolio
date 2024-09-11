@@ -18,7 +18,7 @@ export const personalInfo = {
   nationality: 'Pakistani',
   birthDate: '30/08/2000',
   gender: 'Male',
-  imageUrl: '/images/hassan-zohaib.png', // Replace with your actual image URL
+  imageUrl: '/portfolio/images/hassan-zohaib.png', // Replace with your actual image URL
 }
 
 export const workExperience = [
@@ -110,15 +110,15 @@ export const projectData = [
   {
     id: '1',
     name: 'Tauri Invoice App',
-    img: '/images/Invoice-app/cart-added.JPG',
+    img: '/portfolio/images/Invoice-app/cart-added.JPG',
     desc: 'Invoice app created for a client to print his invoices. This project include Next js as frontend and rust as backend with sqlite database. ',
     slug: 'invoice-app',
     tech: ['Next JS', 'Tauri', 'Rust'],
     feature: ['1: Very Light weight only 3.1mbs', '2: High performance'],
     screenShot: [
-      '/images/Invoice-app/Login.JPG',
-      '/images/Invoice-app/product.JPG',
-      '/images/Invoice-app/invoice page.JPG',
+      '/portfolio/images/Invoice-app/Login.JPG',
+      '/portfolio/images/Invoice-app/product.JPG',
+      '/portfolio/images/Invoice-app/invoice page.JPG',
     ],
     source: '',
     live: '',
