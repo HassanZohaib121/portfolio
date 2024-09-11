@@ -29,10 +29,10 @@ export default function Form() {
 
     emailjs
       .sendForm(
-        'service_8git0cs', // Replace with your EmailJS service ID
-        'template_ki19dqk', // Replace with your EmailJS template ID
+        'service_8git0cs',
+        'template_r3p27br',
         e.target,
-        'YOUR_USER_ID' // Replace with your EmailJS user ID
+        'mOp5dZIIpZetjsXFr'
       )
       .then(
         (result) => {
