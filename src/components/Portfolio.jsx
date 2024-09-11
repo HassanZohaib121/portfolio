@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { projectData, skills, testimonials } from '../lib/data'
 
 import PIC from '../assets/hassan-zohaib.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from './Footer'
 import Form from './Form'
 
@@ -30,10 +30,10 @@ export default function Portfolio() {
         className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md"
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold flex flow-row">
+          <Link href="/" className="text-2xl font-bold flex flow-row">
             <img src="/h.png" alt="logo" className="w-8 -mr-2" />
             assan Zohaib
-          </a>
+          </Link>
           <nav className="hidden md:flex space-x-8">
             <a
               href="#projects"
