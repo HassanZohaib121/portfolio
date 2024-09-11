@@ -41,16 +41,23 @@ export default function CV() {
                 download
                 className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
               >
-                Download CV
+                Print CV
               </Button>
             )}
             content={() => componentRef.current}
           />
+          <a
+            href={'/portfolio/cv/hassan.pdf'}
+            download
+            className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
+          >
+            Download CV
+          </a>
         </div>
       </header>
 
       <div
-        className="max-w-6xl mx-10 p-8 bg-white shadow-2xl border border-cyan-100"
+        className="max-w-6xl mx-auto p-8 bg-white shadow-2xl border border-cyan-100"
         ref={componentRef}
       >
         <header className="flex flex-col md:flex-row justify-between items-start mb-8 border-b pb-4">
