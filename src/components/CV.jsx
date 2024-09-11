@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import { Button } from '../components/ui/button'
 import ReactToPrint from 'react-to-print'
 
@@ -10,15 +10,14 @@ import {
   skill,
 } from '../lib/data'
 import { ArrowLeft } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 export default function CV() {
   const [imageError, setImageError] = useState(false)
 
-  const componentRef = useRef()
+  const navigate = useNavigate()
 
-  useEffect(() => {
-    // Any side effects can be handled here
-  }, [])
+  const componentRef = useRef()
 
   const handleImageError = () => {
     setImageError(true)
@@ -38,7 +37,7 @@ export default function CV() {
           <ReactToPrint
             trigger={() => (
               <Button
-                onClick={() => print}
+                onClick={navigate('/portfolio/cv/hassan.pdf')}
                 download
                 className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
               >
