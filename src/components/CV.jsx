@@ -51,7 +51,7 @@ export default function CV() {
       </header>
 
       <div
-        className="max-w-6xl mx-auto p-8 bg-white shadow-2xl border border-cyan-100"
+        className="max-w-6xl mx-10 p-8 bg-white shadow-2xl border border-cyan-100"
         ref={componentRef}
       >
         <header className="flex flex-col md:flex-row justify-between items-start mb-8 border-b pb-4">
