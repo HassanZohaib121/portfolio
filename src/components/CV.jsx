@@ -39,6 +39,7 @@ export default function CV() {
             trigger={() => (
               <Button
                 onClick={() => print}
+                download
                 className="bg-primary text-white font-bold rounded-xl bg-gray-700 hover:bg-gray-300 hover:text-gray-700 mb-3"
               >
                 Download CV
