@@ -8,9 +8,9 @@ function App() {
     <Router>
       <main>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/project/:slug" element={<ProjectPage />} />
-          <Route path="/cv" element={<CVPage />} />
+          <Route path="/portfolio" element={<HomePage />} />
+          <Route path="/portfolio/project/:slug" element={<ProjectPage />} />
+          <Route path="/portfolio/cv" element={<CVPage />} />
         </Routes>
       </main>
     </Router>
