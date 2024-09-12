@@ -7,6 +7,10 @@ export const skills = [
   { id: '6', name: 'Next Js', bgColor: 'bg-black' },
   { id: '7', name: 'Tailwind CSS', bgColor: 'bg-teal-500' },
   { id: '8', name: 'Tauri', bgColor: 'bg-yellow-500' },
+  { id: '9', name: 'Wordpress', bgColor: 'bg-[#21759B]' },
+  { id: '10', name: 'Shadcn', bgColor: 'bg-zinc-800' },
+  { id: '11', name: 'Javascript', bgColor: 'bg-yellow-800' },
+  { id: '12', name: 'python', bgColor: 'bg-blue-400' },
 ]
 
 export const personalInfo = {
