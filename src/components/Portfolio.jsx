@@ -244,14 +244,13 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-        <button
-          onClick={() => {
-            navigate('https://github.com/HassanZohaib121')
-          }}
-          className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
-        >
-          See All My Projects
-        </button>
+        <div className="flex justify-center">
+          <a href="https://github.com/HassanZohaib121">
+            <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+              See All My Projects
+            </button>
+          </a>
+        </div>
       </section>
 
       {/* Skills Section */}
