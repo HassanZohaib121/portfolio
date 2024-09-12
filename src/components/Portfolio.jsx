@@ -248,8 +248,7 @@ export default function Portfolio() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 * 0.1 }}
-          // className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
-          className="flex justify-center mt-4"
+          className="flex justify-center mt-10"
         >
           <a href="https://github.com/HassanZohaib121">
             <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
