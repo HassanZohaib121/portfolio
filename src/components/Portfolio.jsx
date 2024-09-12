@@ -244,6 +244,13 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
+        <button
+          onClick={() => {
+            navigate('https://github.com/HassanZohaib121')
+          }}
+        >
+          See All My Projects
+        </button>
       </section>
 
       {/* Skills Section */}
