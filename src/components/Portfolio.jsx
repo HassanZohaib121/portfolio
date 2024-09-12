@@ -216,7 +216,9 @@ export default function Portfolio() {
                                 ? 'bg-yellow-500'
                                 : x === 'Rust'
                                 ? 'bg-red-500'
-                                : 'bg-white'
+                                : x === 'Shadcn'
+                                ? 'bg-zinc-800'
+                                : 'bg-black'
                             }
 
                             }

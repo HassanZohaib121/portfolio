@@ -64,13 +64,6 @@ export default function SingleProject() {
                   </li>
                 ))}
               </ul>
-              {/* <h2>Challenges and Solutions</h2>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
