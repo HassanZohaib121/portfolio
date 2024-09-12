@@ -85,7 +85,22 @@ export const skill = [
   },
   {
     category: 'Digital skills',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Git'],
+    skills: [
+      'HTML',
+      'CSS',
+      'React',
+      'Rust',
+      'TypeScript',
+      'Next Js',
+      'Tailwind CSS',
+      'Tauri',
+      'Wordpress',
+      'Shadcn',
+      'Javascript',
+      'python',
+      'Git',
+      'Node.js',
+    ],
   },
 ]
 
