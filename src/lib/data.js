@@ -123,4 +123,16 @@ export const projectData = [
     source: '',
     live: '',
   },
+  {
+    id: '2',
+    name: 'Dashboard',
+    img: '/portfolio/images/Dashboard/Dashboard.png',
+    desc: 'Dashboard App Created by with shadcn/ui. Responsive, beautiful design.',
+    slug: 'Dashboard',
+    tech: ['Next JS', 'Tailwindcss', 'Shadcn'],
+    feature: ['1: Beautiful Design', '2: High performance'],
+    screenShot: ['/portfolio/images/Dashboard/Dashboard.png'],
+    source: 'https://github.com/HassanZohaib121/dashboard',
+    live: 'https://hassanzohaib121.github.io/dashboard/',
+  },
 ]
