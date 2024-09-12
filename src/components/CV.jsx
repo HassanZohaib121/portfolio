@@ -8,6 +8,7 @@ import {
   workExperience,
   education,
   skill,
+  commonSkills,
 } from '../lib/data'
 import { ArrowLeft } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -165,17 +166,31 @@ export default function CV() {
               )}
             </div>
           ))}
-          <ul>
-            {skill.map((lang, idx) => (
+          <ul className="list-disc list-inside mt-2">
+            {commonSkills.map((lang, idx) => (
               <li key={idx} className="text-gray-700 flex flex-col">
-                <span className="text-lg font-bold">{lang.category}</span>
+                <div className="text-lg font-semibold">{lang.category}</div>
                 {lang.skills.map((x) => {
-                  return (
-                    <span key={x} className="flex flex-row">
-                      {x}
-                    </span>
-                  )
+                  return <div key={x}>{x}</div>
                 })}
+              </li>
+            ))}
+          </ul>
+          <ul className="my-3">
+            {skill.map((lang, idx) => (
+              <li key={idx} className="text-gray-700 flex flex-col ">
+                <div className="text-2xl font-semibold mb-4 bg-gray-200 p-2">
+                  {lang.category}
+                </div>
+                <div className="grid grid-cols-4 gap-3 ml-2">
+                  {lang.skills.map((x) => {
+                    return (
+                      <div key={x} className="text-gray-700 ">
+                        {x}
+                      </div>
+                    )
+                  })}
+                </div>
               </li>
             ))}
           </ul>

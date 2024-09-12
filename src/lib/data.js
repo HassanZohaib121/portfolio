@@ -74,7 +74,7 @@ export const personalSkills = [
   },
 ]
 
-export const skill = [
+export const commonSkills = [
   {
     category: 'Communication skills',
     skills: ['Excellent written and verbal communication'],
@@ -83,6 +83,9 @@ export const skill = [
     category: 'Organisational skills',
     skills: ['Strong project management and time management skills'],
   },
+]
+
+export const skill = [
   {
     category: 'Digital skills',
     skills: [
