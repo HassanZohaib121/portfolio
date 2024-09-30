@@ -9,6 +9,7 @@ import {
   education,
   skill,
   commonSkills,
+  projectData,
 } from '../lib/data'
 import { ArrowLeft } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
@@ -107,7 +108,7 @@ export default function CV() {
           <h2 className="text-2xl font-semibold mb-4 bg-gray-200 p-2">
             Work Experience
           </h2>
-          {workExperience.map((job, index) => (
+          {workExperience.map(({ job, index }) => (
             <div key={index} className="mb-4">
               <p className="font-semibold">{job.dates}</p>
               <p className="font-semibold">{job.position}</p>
@@ -123,6 +124,41 @@ export default function CV() {
               </ul>
             </div>
           ))}
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4 bg-gray-200 p-2">
+            Projects
+          </h2>
+          {projectData.map(
+            ({ id, name, desc, tech, feature, source, live }) => (
+              <div key={id} className="mb-4">
+                <p className="font-semibold">{name}</p>
+                <p className="flex flex-wrap gap-2 mb-6">
+                  {tech.map((x) => (
+                    <span
+                      key={x}
+                      className=" flex flex-row px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                    >
+                      {x}
+                    </span>
+                  ))}
+                </p>
+                <p></p>
+                {/* <ul className="list-disc list-inside mt-2"> */}
+                <ul>
+                  {feature.map((resp, idx) => (
+                    <li key={idx} className="text-gray-700">
+                      {resp}
+                    </li>
+                  ))}
+                </ul>
+                {source && source}
+                {live && live}
+                {desc && desc}
+              </div>
+            )
+          )}
         </section>
 
         <section className="mb-8">
