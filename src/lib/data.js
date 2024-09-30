@@ -15,7 +15,7 @@ export const skills = [
 
 export const personalInfo = {
   name: 'Hassan Zohaib',
-  jobTitle: 'Web Developer | Desktop App Developer',
+  jobTitle: 'Web Developer | Desktop App Developer ',
   address: 'Sargodha, Punjab, Pakistan',
   telephone: '+92 310 6025 047',
   email: 'hassan.zohaib.184@gmail.com',
