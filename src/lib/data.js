@@ -22,18 +22,35 @@ export const personalInfo = {
   nationality: 'Pakistani',
   birthDate: '30/08/2000',
   gender: 'Male',
+  portfolio: 'https://hassanzohaib121.github.io/portfolio/',
+  github: 'https://github.com/HassanZohaib121',
   imageUrl: '/portfolio/images/hassan-zohaib.png', // Replace with your actual image URL
 }
 
 export const workExperience = [
   {
-    dates: '01/10/2023 – 31/07/2024',
+    id: 1,
+    dates: '01/10/2023 – 30/06/2024',
     position: 'Web Developer',
     employer: 'ilaahi international',
     address: 'Office #4, university Road, opposite fatima Hospital, Sargodha',
     responsibilities: [
+      'Creating Wordpress Sites',
       'Develop and maintain web applications',
       'Collaborate with cross-functional teams',
+      'Implement responsive design principles',
+    ],
+  },
+  {
+    id: 2,
+    dates: '01/06/2024 – 30/08/2024',
+    position: 'Web Developer',
+    employer: 'Picknbuy',
+    address:
+      'Office #8, 4th floor, Mall of sargodha, university Road, Sargodha',
+    responsibilities: [
+      'Creating Wordpress Site',
+      'Develop and maintain web applications',
       'Implement responsive design principles',
     ],
   },
@@ -175,7 +192,7 @@ export const projectData = [
   },
   {
     id: '4',
-    name: 'jazilproperty.com/',
+    name: 'jazilproperty.com',
     img: '/portfolio/images/jazilproperty/jazilproperty.png',
     desc: 'Jazil Property Consultant and Maintenance website',
     slug: 'jazilproperty',
@@ -186,8 +203,8 @@ export const projectData = [
     live: 'https://jazilproperty.com/',
   },
   {
-    id: '4',
-    name: 'europroinst.com/',
+    id: '5',
+    name: 'europroinst.com',
     img: '/portfolio/images/europroinst/europroinst.png',
     desc: 'European Professional institute',
     slug: 'europroinst',
@@ -196,5 +213,35 @@ export const projectData = [
     screenShot: ['/portfolio/images/europroinst/europroinst.png'],
     // source: 'https://github.com/HassanZohaib121/dashboard',
     live: 'https://europroinst.com/',
+  },
+  {
+    id: '6',
+    name: 'ilaahi international App',
+    // img: '/portfolio/images/europroinst/europroinst.png',
+    desc: 'ilaahi international App React native app',
+    slug: 'ilaahi-app',
+    tech: ['React Native', 'Axios'],
+    feature: ['1: Beautiful Design', '2: Using Wordpress Api'],
+    screenShot: [''],
+    source:
+      'https://github.com/HassanZohaib121/react-native-app-with-wordpress-api',
+    // live: 'https://europroinst.com/',
+  },
+  {
+    id: '7',
+    name: 'Student Study Advisor',
+    img: '/portfolio/images/SSA/SSA.png',
+    desc: 'ilaahi international App React native app',
+    slug: 'ssa',
+    tech: ['React Native', 'Axios'],
+    feature: ['1: Beautiful Design', '2: Using Wordpress Api'],
+    screenShot: [
+      '/portfolio/images/SSA/SSAH.png',
+      '/portfolio/images/SSA/SSAS.png',
+      '/portfolio/images/SSA/SSAV.png',
+    ],
+    // source:
+    //   'https://github.com/HassanZohaib121/react-native-app-with-wordpress-api',
+    live: 'https://studentstudyadvisor.com',
   },
 ]

@@ -101,6 +101,12 @@ export default function CV() {
             <p>
               <strong>Gender:</strong> {personalInfo.gender}
             </p>
+            <p>
+              <strong>Portfolio:</strong> {personalInfo.portfolio}
+            </p>
+            <p>
+              <strong>Github:</strong> {personalInfo.github}
+            </p>
           </div>
         </section>
 
@@ -108,22 +114,24 @@ export default function CV() {
           <h2 className="text-2xl font-semibold mb-4 bg-gray-200 p-2">
             Work Experience
           </h2>
-          {workExperience.map(({ job, index }) => (
-            <div key={index} className="mb-4">
-              <p className="font-semibold">{job.dates}</p>
-              <p className="font-semibold">{job.position}</p>
-              <p>
-                {job.employer}, {job.address}
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                {job.responsibilities.map((resp, idx) => (
-                  <li key={idx} className="text-gray-700">
-                    {resp}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {workExperience.map(
+            ({ id, dates, position, employer, address, responsibilities }) => (
+              <div key={id} className="mb-4">
+                <p className="font-semibold">{dates}</p>
+                <p className="font-semibold">{position}</p>
+                <p>
+                  {employer}, {address}
+                </p>
+                <ul className="list-disc list-inside mt-2">
+                  {responsibilities.map((resp, idx) => (
+                    <li key={idx} className="text-gray-700">
+                      {resp}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          )}
         </section>
 
         <section className="mb-8">
@@ -146,16 +154,32 @@ export default function CV() {
                 </p>
                 <p></p>
                 {/* <ul className="list-disc list-inside mt-2"> */}
-                <ul>
+                <ul className="mb-2">
                   {feature.map((resp, idx) => (
                     <li key={idx} className="text-gray-700">
                       {resp}
                     </li>
                   ))}
                 </ul>
-                {source && source}
-                {live && live}
-                {desc && desc}
+                <div className="flex flex-col gap-2">
+                  <div>
+                    {source && (
+                      <>
+                        {`
+                    Source: ${source}`}
+                      </>
+                    )}
+                  </div>
+                  <div>
+                    {live && (
+                      <>
+                        {`
+                    Live: ${live}`}
+                      </>
+                    )}
+                  </div>
+                  <div>{desc && desc} </div>
+                </div>
               </div>
             )
           )}

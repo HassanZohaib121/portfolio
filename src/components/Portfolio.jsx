@@ -187,7 +187,7 @@ export default function Portfolio() {
               >
                 <img
                   src={img}
-                  alt={`Project ${name}`}
+                  alt={`${name}`}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
